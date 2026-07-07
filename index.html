@@ -767,6 +767,14 @@ async function init() {
   }
 }
 
+// Pick up the write key even if it's pasted into an already-open tab
+// (changing only the #fragment does not reload the page).
+window.addEventListener('hashchange', () => {
+  const before = TOKEN;
+  resolveToken();
+  if (STATE && TOKEN !== before) render();
+});
+
 // Refresh when the tab regains focus so managers see each other's updates —
 // but never while someone has an unsaved check-in in progress.
 document.addEventListener('visibilitychange', async () => {
