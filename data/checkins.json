@@ -101,6 +101,35 @@
           "plan": ""
         }
       ]
+    },
+    {
+      "branchId": "mckinney",
+      "managerId": "zach-krodel",
+      "managerName": "Zach Krodel",
+      "weekOf": "2026-07-06",
+      "submittedAt": "2026-07-07T15:52:47.580Z",
+      "goals": [
+        {
+          "goalId": 1,
+          "status": "red",
+          "plan": "Continue Samsara coaching focus. Need sustained improvement to reach green by EOQ."
+        },
+        {
+          "goalId": 2,
+          "status": "super_green",
+          "plan": "Maintain sales cadence."
+        },
+        {
+          "goalId": 3,
+          "status": "super_green",
+          "plan": "Continue monitoring. Deliver praises at milestones."
+        },
+        {
+          "goalId": 4,
+          "status": "red",
+          "plan": "Start logging praise!"
+        }
+      ]
     }
   ]
 }
