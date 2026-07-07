@@ -39,7 +39,7 @@
       "managerId": "jack-davis",
       "managerName": "Jack Davis",
       "weekOf": "2026-07-06",
-      "submittedAt": "2026-07-07T15:02:46.362Z",
+      "submittedAt": "2026-07-07T15:03:27.450Z",
       "goals": [
         {
           "goalId": 1,
@@ -64,7 +64,7 @@
         {
           "goalId": 5,
           "status": "blocked",
-          "plan": "na"
+          "plan": "N/A"
         }
       ]
     }
