@@ -193,6 +193,35 @@
           "plan": "N/A"
         }
       ]
+    },
+    {
+      "branchId": "dallas",
+      "managerId": "tabi-enoh",
+      "managerName": "Tabi Enoh",
+      "weekOf": "2026-07-06",
+      "submittedAt": "2026-07-07T17:21:31.845Z",
+      "goals": [
+        {
+          "goalId": 1,
+          "status": "red",
+          "plan": "My plan this week is to focus my onsite/OB field training on improving the performance of the lower performers in the Einstein games."
+        },
+        {
+          "goalId": 2,
+          "status": "green",
+          "plan": "My focus this week is completing at least 3+ driver training since the schedule this week is lighter than normal."
+        },
+        {
+          "goalId": 3,
+          "status": "blocked",
+          "plan": ""
+        },
+        {
+          "goalId": 4,
+          "status": "red",
+          "plan": "My plan this week is to focus on delivering praise to the guys.\nMy goal this week is 10+ praises delivered by the end of the week and aiming to achieve supergreen status by July 10."
+        }
+      ]
     }
   ]
 }
