@@ -164,6 +164,35 @@
           "plan": "N/A"
         }
       ]
+    },
+    {
+      "branchId": "dallas",
+      "managerId": "landon-vaughan",
+      "managerName": "Landon Vaughan",
+      "weekOf": "2026-07-06",
+      "submittedAt": "2026-07-07T17:04:02.801Z",
+      "goals": [
+        {
+          "goalId": 1,
+          "status": "red",
+          "plan": "We have multiple guys scheduled on short days staying after their jobs to complete driver training. I'm still sending guys their pings whenever they come through. We've just been hit with some heavy pings from newer drivers who had to be thrust into the role on the day of due to scheduling issues. We're getting it resolved -- it's just incredibly difficult with how busy we've been over the past month."
+        },
+        {
+          "goalId": 2,
+          "status": "red",
+          "plan": "I'm at 61% with a 38% conversion. Plan to do sales during my admin tasks or any downtime I have. A lot of moving pieces this quarter with the personnel shift & position change, but I do feel like it's all settling in -- so sales will pick back up over the rest of this month/next quarter."
+        },
+        {
+          "goalId": 3,
+          "status": "green",
+          "plan": "Continue to issue warnings as they come through & stay on top of the guys when they're out in the trucks."
+        },
+        {
+          "goalId": 4,
+          "status": "green",
+          "plan": "Currently at 29/36 -- will have this at SG by the end of the week, most likely."
+        }
+      ]
     }
   ]
 }
