@@ -67,6 +67,40 @@
           "plan": "na"
         }
       ]
+    },
+    {
+      "branchId": "mckinney",
+      "managerId": "khevan-dueck",
+      "managerName": "Khevan Dueck",
+      "weekOf": "2026-07-06",
+      "submittedAt": "2026-07-07T15:50:04.426Z",
+      "goals": [
+        {
+          "goalId": 1,
+          "status": "green",
+          "plan": "Push CE harder on the lower performers"
+        },
+        {
+          "goalId": 2,
+          "status": "green",
+          "plan": "Gonna push another 1-2 leads up and hire 2-3 in the next 2 weeks to keep things smooth"
+        },
+        {
+          "goalId": 3,
+          "status": "red",
+          "plan": "I will change nothing. The status of red is not due to a lack of engagement it is simply me doing my sales blocks and when not in sales blocks focusing on everything else"
+        },
+        {
+          "goalId": 4,
+          "status": "green",
+          "plan": "Any potential C players are too new to confidently brand a C"
+        },
+        {
+          "goalId": 5,
+          "status": "blocked",
+          "plan": ""
+        }
+      ]
     }
   ]
 }
