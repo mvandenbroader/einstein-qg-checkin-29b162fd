@@ -1,0 +1,745 @@
+{
+  "meta": {
+    "quarter": "Q2 2026",
+    "quarterStart": "2026-05-01",
+    "quarterEnd": "2026-07-31",
+    "lastGenerated": "2026-05-19T15:00:00"
+  },
+  "branches": [
+    {
+      "id": "tampa",
+      "name": "Tampa",
+      "lastSync": "2026-06-30",
+      "managers": [
+        {
+          "id": "steven-anderson",
+          "name": "Steven Anderson",
+          "role": "BM",
+          "goals": [
+            {
+              "id": 1,
+              "name": "Einstein Games — Overall Score Accountability",
+              "thresholds": {
+                "superGreen": "Branch average total score 8 or higher",
+                "green": "Branch average total score 7 or higher",
+                "red": "Branch average total score less than 7"
+              },
+              "status": "super_green",
+              "currentValue": "QTD avg 9.7; current week pacing 13",
+              "notes": "Super green confirmed 6/30. QTD average 9.7 (weeks: 9.0, 9.4, 11.0, 10.4, 9.2, current 13 pacing). Beat Houston last week, currently leading Garland 47-42. Damages improving with proactive Wall Pro usage. Ronald mobile usage violation Friday -- coaching applied, copilot Stephen Crilly reminded on accountability. Clover app instability 2-3x/week causing back-end delays. Front-end compression directive: target 2-3 min (currently 10-15). Einstein Games tracker does not display quarterly average -- Madison update requested.",
+              "nextAction": "Ronald to complete Ripley mobile usage retraining by 7/5. Push front-end compression. Follow up with Madison on tracker quarterly average display.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 2,
+              "name": "Hiring Targets",
+              "thresholds": {
+                "superGreen": "100%+ staffing for qtr; People Analyzer reviewed; C players cleared or have action plans; eNPS cleared by end of May",
+                "green": "100%+ staffing for qtr; People Analyzer reviewed; C players cleared or have action plans; eNPS cleared by end of June",
+                "red": "95% or less staffing OR eNPS board not cleared"
+              },
+              "status": "green",
+              "currentValue": "9.6 FTE vs 9.9 July target = 97%. Need 2 hires minimum.",
+              "notes": "Green 6/30. Dropped from 10 FTE to 9.6 after Clem departure. Rocco terminated for job abandonment. Eric back full-time. Z at first written warning for unprofessional NCNS. Austin Burritt worked Sunday 6/28, negotiations ongoing. Plan: source 3-4 candidates via ClearCo post-holiday (starting 7/6), rapid evaluation weeks 1-2, aim to retain 2 A-players.",
+              "nextAction": "Process Rocco termination in Rippling. Steven to source candidates starting 7/6. Onboard 3-4; keep/cut within 2 weeks.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 3,
+              "name": "Branch and Individual Sales Goals / Estimate Accuracy",
+              "thresholds": {
+                "superGreen": "All managers at 110%+ to goal with conversion rate at or above company average",
+                "green": "All managers at 100%+ to goal with conversion rate at or above company average",
+                "red": "Any manager below 100% to goal or below company average conversion rate"
+              },
+              "status": "green",
+              "currentValue": "Steven finishing training Wed/Thu this week. Both managers running sales blocks.",
+              "notes": "Green confirmed 6/30. Steven final training days 7/2-7/3. Shane has 3 sales blocks (Mon PM, Thu AM, all day Sat). No individual targets discussed. First full sales month = July. Jespah Lara SQL conversion still not discussed -- carryover from 2 syncs.",
+              "nextAction": "Set individual sales targets for July. Review Jespah coaching status next sync.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 4,
+              "name": "People Analyzer or Flex Personal Goal",
+              "thresholds": {
+                "superGreen": "Less than 5% C players by EOQ; eNPS board cleared by end of May",
+                "green": "Less than 10% C players by EOQ; eNPS board cleared by end of June",
+                "red": "More than 10% C players at EOQ or eNPS board not cleared by June"
+              },
+              "status": "super_green",
+              "currentValue": "No C players. Nate potential C-to-B. Rocco terminated. Z at written warning.",
+              "notes": "Super green confirmed 6/30. Rocco terminated (job abandonment). Z first written warning for unprofessional conduct -- removed from schedule Mon-Thu. Nate C-to-B transition, needs speed/efficiency. Eric back full-time. Clem departed.",
+              "nextAction": "Coach Z and issue written warning in Rippling. Set Nate KPI goal for contract efficiency by 7/5.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 5,
+              "name": "Scrum Accountability",
+              "thresholds": {
+                "superGreen": "Scrum scorecard average 90+ (starting June/July); minimum 5 scorecards",
+                "green": "Scrum scorecard average 80+ (starting June/July); minimum 5 scorecards",
+                "red": "Scrum scorecard average less than 80 or fewer than 5 scorecards"
+              },
+              "status": "blocked",
+              "currentValue": "Deferred -- not happening this quarter",
+              "notes": "Confirmed deferred 6/30. Brian will not finish rollout in time. QGR in ~2 weeks.",
+              "nextAction": "No action this quarter. Revisit Q3.",
+              "lastUpdated": "2026-06-30"
+            }
+          ]
+        },
+        {
+          "id": "shane-heaberlin",
+          "name": "Shane Heaberlin",
+          "role": "Ops",
+          "goals": [
+            {
+              "id": 1,
+              "name": "Einstein Games — Samsara Focus + Damages",
+              "thresholds": {
+                "superGreen": "Branch average score for Samsara and Damages 8 or higher",
+                "green": "Branch average score for Samsara and Damages 7 or higher",
+                "red": "Branch average score for Samsara and Damages less than 7"
+              },
+              "status": "super_green",
+              "currentValue": "QTD avg 9.7; current week pacing 13. Damages improving with Wall Pro.",
+              "notes": "Super green confirmed 6/30. Damages improving with proactive Wall Pro usage. Ronald mobile usage coaching applied. Beat Houston, leading Garland 47-42. Samsara QTD 93, last week 81.",
+              "nextAction": "Ronald retraining by 7/5. Continue damage prevention coaching.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 2,
+              "name": "Individual Sales Goal / Improve Estimate Accuracy",
+              "thresholds": {
+                "superGreen": "Reach 105% to goal and at or above company average $ conversion rate",
+                "green": "Reach 100% to goal and at or above company average $ conversion rate",
+                "red": "Below 100% or below company average $ conversion rate"
+              },
+              "status": "green",
+              "currentValue": "Sales blocks active. 3 blocks this week.",
+              "notes": "Green confirmed 6/30. Shane has 3 sales blocks via Brian manager calendar. No individual target set yet. First full month = July.",
+              "nextAction": "Set individual sales target for July. Begin tracking conversion rate.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 3,
+              "name": "Driver Safety Coaching / Retraining",
+              "thresholds": {
+                "superGreen": "90%+ coachings issued and retraining completed",
+                "green": "80%+ coachings issued and retraining completed",
+                "red": "Less than 80% coachings issued and retraining completed"
+              },
+              "status": "super_green",
+              "currentValue": "Samsara QTD 93. Ronald mobile usage warning issued.",
+              "notes": "Super green confirmed 6/30. Ronald prompted for mobile usage retraining on Ripley. Only 4 praises needed from dashboard.",
+              "nextAction": "Confirm Ronald completes retraining. Continue coaching cadence.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 4,
+              "name": "Praise Goal",
+              "thresholds": {
+                "superGreen": "48+ praise entries (4 per week)",
+                "green": "36+ praise entries (3 per week)",
+                "red": "Fewer than 36 praise entries"
+              },
+              "status": "super_green",
+              "currentValue": "34/48 (Week 9); pace 4.1/wk",
+              "notes": "Super green confirmed 6/30. Up from 33 to 34. Shane has entries ready to log. 14 remaining, 4 weeks left = 3.5/wk needed for green.",
+              "nextAction": "Maintain 4+/week cadence. Log banked entries.",
+              "lastUpdated": "2026-06-30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dallas",
+      "name": "Dallas",
+      "lastSync": "2026-06-23",
+      "managers": [
+        {
+          "id": "chris-beattie",
+          "name": "Chris Beattie",
+          "role": "BM",
+          "goals": [
+            {
+              "id": 1,
+              "name": "Einstein Games — Overall Score Accountability",
+              "thresholds": {
+                "superGreen": "Branch average total score 8 or higher",
+                "green": "Branch average total score 7 or higher",
+                "red": "Branch average total score less than 7"
+              },
+              "status": "red",
+              "currentValue": "Branch Einstein Games avg still ~6.2 QTD. Week 5 currently at zero reviews, 13 damages, 5 driver safety.",
+              "notes": "Still red — 6.2 avg QTD. Week 5 in progress: damages 13 (strong), driver safety 5 (weak), reviews 0 (terrible), contract efficiency 28min (5). Tabi now actively targeting damage-causing movers via data breakdown. 9 new leads still the main anchor on contract efficiency and reviews. Beattie on vacation 6/22-6/26. Tabi leading field training catch-up.",
+              "nextAction": "Tabi to prioritize OB field training for damage-causing movers. Target reviews and contract efficiency when Beattie returns.",
+              "lastUpdated": "2026-06-23"
+            },
+            {
+              "id": 2,
+              "name": "Hiring Targets",
+              "thresholds": {
+                "superGreen": "ND branch 100%+ staffing for qtr; People Analyzer reviewed; C players cleared or have action plans; eNPS cleared by end of May",
+                "green": "ND branch 100%+ staffing for qtr; People Analyzer reviewed; C players cleared or have action plans; eNPS cleared by end of June",
+                "red": "ND averaging 95% or less staffing OR eNPS board not cleared"
+              },
+              "status": "super_green",
+              "currentValue": "114% staffing (49.4 FTE vs 43 June goal). Well overstaffed. July goal 41.",
+              "notes": "Confirmed 6/23 sync: 49.4 FTE vs 43 June goal = 114%. July goal 41, still well above. Beattie on vacation 6/22-6/26 but pipeline active. Schedule template already done. Keep hiring as demand supports — guys still getting heavy hours.",
+              "nextAction": "Continue hiring 2-3 new people. Monitor Tamel trajectory. Beattie out 6/22-6/26 -- pipeline should be active before departure.",
+              "lastUpdated": "2026-06-23"
+            },
+            {
+              "id": 3,
+              "name": "Branch and Individual Sales Goals / Estimate Accuracy",
+              "thresholds": {
+                "superGreen": "All managers at 110%+ to goal with conversion rate at or above company average",
+                "green": "All managers at 100%+ to goal with conversion rate at or above company average",
+                "red": "Any manager below 100% to goal or below company average conversion rate"
+              },
+              "status": "at_risk",
+              "currentValue": "Branch 60% MTD June (vs 52% company avg); Beattie ~35% personal MTD; Landon ~20% personal MTD; Landon EMMA target not set (should be $84k)",
+              "notes": "Branch performing well -- 60% vs 52% company avg, booked solid 2 weeks out. Individual managers behind personal targets. Beattie at ~35% MTD, out 6/22-6/26 limiting recovery window. Landon at ~20% but no EMMA target set (should be $84k, same as Zach Krodel). Landon super green last month (106%) and confident in catching up. Conversion rate naturally depressed when booked out -- turning away leads.",
+              "nextAction": "Mike to set Landon EMMA target to $84k. Both managers push individual sales second half of June. Beattie to prioritize before 6/22 departure.",
+              "lastUpdated": "2026-06-16"
+            },
+            {
+              "id": 4,
+              "name": "People Analyzer or Flex Personal Goal",
+              "thresholds": {
+                "superGreen": "Less than 5% C players by EOQ; eNPS board cleared by end of May",
+                "green": "Less than 10% C players by EOQ; eNPS board cleared by end of June",
+                "red": "More than 10% C players at EOQ or eNPS board not cleared by June"
+              },
+              "status": "super_green",
+              "currentValue": "0 C players; eNPS board cleared; Frankie out; Tamel coaching up",
+              "notes": "Mike confirmed super green. No C players. Frankie (last C player) is gone. Tamel had attitude issues but responded to coaching -- tracking well. 9 new leads are too new to evaluate for C-player status. eNPS board cleared per Beattie.",
+              "nextAction": "Monitor Tamel trajectory. Evaluate new leads at training day 6/18 for early attitude/culture signals.",
+              "lastUpdated": "2026-06-16"
+            },
+            {
+              "id": 5,
+              "name": "Scrum Accountability",
+              "thresholds": {
+                "superGreen": "Scrum scorecard average 90+ (starting June/July); minimum 5 scorecards",
+                "green": "Scrum scorecard average 80+ (starting June/July); minimum 5 scorecards",
+                "red": "Scrum scorecard average less than 80 or fewer than 5 scorecards"
+              },
+              "status": "blocked",
+              "currentValue": "Not started",
+              "notes": "Blocked pending Brian Herzig company-wide rollout. Beattie confirmed waiting for instructions.",
+              "nextAction": "Standby pending Brian rollout.",
+              "lastUpdated": "2026-05-26"
+            }
+          ]
+        },
+        {
+          "id": "landon-vaughan",
+          "name": "Landon Vaughan",
+          "role": "Ops",
+          "goals": [
+            {
+              "id": 1,
+              "name": "Einstein Games — Samsara Focus",
+              "thresholds": {
+                "superGreen": "Branch average score for Samsara and Damages 8 or higher",
+                "green": "Branch average score for Samsara and Damages 7 or higher",
+                "red": "Branch average score for Samsara and Damages less than 7"
+              },
+              "status": "red",
+              "currentValue": "Einstein Games Samsara avg 6.2 QTD. Week 5 score: 5 (down from 7 last week). Branch QTD Samsara: 83.",
+              "notes": "Week-by-week driver safety scores: 6, 7, 6, 7, 5 — avg 6.2, red. Key problem drivers: Logan Schuster (all categories — new lead promoted too fast, needs driver training urgently), Eduardo (15 alerts, following distance primary), Jake (following distance + inattentive driving), Victor (rolling stops, coached at training day), Matthew Castillo (recovery mode from gate incident + rolling stops, QTD 73 improving). Landon doing daily pings and coaching. John had false cell phone dismissal. New trucks causing false severe-speeding alerts due to speedometer miscalibration — Rush recalibration scheduled.",
+              "nextAction": "Issue Rippling warnings to Jake and Logan (auto-triggers retraining). Driver train Logan ASAP. Reset miles for Matthew Castillo and Lucas. Continue daily coaching.",
+              "lastUpdated": "2026-06-23"
+            },
+            {
+              "id": 2,
+              "name": "Individual Sales Goal / Improve Estimate Accuracy",
+              "thresholds": {
+                "superGreen": "Reach 105% to goal and at or above company average $ conversion rate",
+                "green": "Reach 100% to goal and at or above company average $ conversion rate",
+                "red": "Below 100% or below company average $ conversion rate"
+              },
+              "status": "red",
+              "currentValue": "27% MTD June. Was 150% in May. Needs 50%+ this month to stay on track for quarterly green.",
+              "notes": "Mike confirmed red in sync. Landon at 27% MTD June vs $84k target (EMMA target still not set — carryover action). Was 150% in May so quarterly math still possible if June hits 50%+. Landon confident he'll reach 100% but hasn't blocked sales time recently. Managing Ops responsibilities, training Tabi, fleet and dispatch simultaneously.",
+              "nextAction": "Mike to set Landon EMMA target to $84k. Landon to increase sales blocks second half of June.",
+              "lastUpdated": "2026-06-23"
+            },
+            {
+              "id": 3,
+              "name": "Driver Safety Coaching / Retraining",
+              "thresholds": {
+                "superGreen": "90%+ coachings issued and retraining completed",
+                "green": "80%+ coachings issued and retraining completed",
+                "red": "Less than 80% coachings issued and retraining completed"
+              },
+              "status": "green",
+              "currentValue": "Green per Mike. Warnings needed for Jake and Logan. Mile resets for Matthew Castillo and Lucas.",
+              "notes": "Mike confirmed green in sync. Process working — Landon understands Rippling auto-enrollment flow now. Two drivers crossed 300-mile threshold needing warnings: Jake (following distance) and Logan Schuster (all categories). Praise/mile resets needed for several drivers. Driver training planned but got pushed from last training day (ran long). Targeting next opportunity to get 4-5 new guys trained.",
+              "nextAction": "Issue warnings to Jake and Logan via dashboard. Reset miles for Matthew Castillo and Lucas. Schedule driver training session for new leads.",
+              "lastUpdated": "2026-06-23"
+            },
+            {
+              "id": 4,
+              "name": "Praise Goal",
+              "thresholds": {
+                "superGreen": "48+ praise entries (4 per week)",
+                "green": "36+ praise entries (3 per week)",
+                "red": "Fewer than 36 praise entries"
+              },
+              "status": "green",
+              "currentValue": "25-26 out of 36 (Week 8). Plans to finish by week of 6/29.",
+              "notes": "Confirmed 25-26 entries in sync. Pace strong — on track to finish remaining ~10 by next week. Easily green, tracking toward super green if he completes on time.",
+              "nextAction": "Complete remaining praises by week of 6/29.",
+              "lastUpdated": "2026-06-23"
+            }
+          ]
+        },
+        {
+          "id": "tabi-enoh",
+          "name": "Tabi Enoh",
+          "role": "FM",
+          "goals": [
+            {
+              "id": 1,
+              "name": "Einstein Games — Damages (FM KPI)",
+              "thresholds": {
+                "superGreen": "Branch average damages score 8 or higher",
+                "green": "Branch average damages score 7 or higher",
+                "red": "Branch average damages score less than 7"
+              },
+              "status": "super_green",
+              "currentValue": "Damages avg 9.4 QTD (weeks: 11, 7, 8, 8, 13). Target 8+ for SG.",
+              "notes": "Super green confirmed 6/23 sync. Tabi using Einstein Games data breakdown to target coaching — damage-causing movers identified: JD Coffee, Alex Vaughn, Crawfish, Logan, Caleb, Emmardo. Tabi's focus: OB field trainings for movers tanking damages score. Week 5 strong at 13.",
+              "nextAction": "Compile list of movers needing OB field training prioritized by damage data. Start field trainings this week.",
+              "lastUpdated": "2026-06-23"
+            },
+            {
+              "id": 2,
+              "name": "FM SuperBoard Management",
+              "thresholds": {
+                "superGreen": "75+ total FM activities logged (onsite evals, flight tests, driver trainings, OB field trainings)",
+                "green": "50+ total FM activities logged",
+                "red": "Fewer than 50 FM activities logged"
+              },
+              "status": "green",
+              "currentValue": "9 out of ~35 mid-quarter target (full quarter 75). Started mid-June.",
+              "notes": "Green confirmed 6/23 sync. Mike set Tabi's mid-quarter target at ~35 (half of 75 full-quarter). Currently at 9, all onsite evals. Needs to log driver trainings, OB field trainings, and flight tests via the FM SuperBoard form (switch presets). FM label fixed during meeting — activities now populate under Tabi's name. Major catch-up needed on OB field trainings for virtually all co-pilots.",
+              "nextAction": "Log all FM activities correctly using form presets. Prioritize OB field trainings and driver trainings — these count toward the 35 target.",
+              "lastUpdated": "2026-06-23"
+            },
+            {
+              "id": 3,
+              "name": "Individual Sales Goal / Improve Estimate Accuracy",
+              "thresholds": {
+                "superGreen": "Reach 105% to goal and at or above company average $ conversion rate",
+                "green": "Reach 100% to goal and at or above company average $ conversion rate",
+                "red": "Below 100% or below company average $ conversion rate"
+              },
+              "status": "blocked",
+              "currentValue": "No sales training this quarter.",
+              "notes": "Blocked — Tabi has no sales training and this likely won't happen this quarter per Mike. Focus is entirely on FM field duties.",
+              "nextAction": "No action needed this quarter.",
+              "lastUpdated": "2026-06-23"
+            },
+            {
+              "id": 4,
+              "name": "Praise Goal",
+              "thresholds": {
+                "superGreen": "17+ praise entries (prorated half-quarter, ~2.8/week)",
+                "green": "12+ praise entries",
+                "red": "Fewer than 12 praise entries"
+              },
+              "status": "red",
+              "currentValue": "1 out of 17 mid-quarter target.",
+              "notes": "Red confirmed 6/23 sync. Tabi has logged only 1 praise entry. Mike clarified: log on Prepare for Praise board (required for QG count), verbal delivery to mover, optional Slack follow-up. Weekly Legend of the Week post required in team Slack channel every Friday.",
+              "nextAction": "Start logging praises on Prepare for Praise board daily. Post Legend of the Week every Friday starting 6/26.",
+              "lastUpdated": "2026-06-23"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fort-worth",
+      "name": "Fort Worth",
+      "lastSync": "2026-06-16",
+      "managers": [
+        {
+          "id": "grant-hardison",
+          "name": "Grant Hardison",
+          "role": "BM",
+          "goals": [
+            {
+              "id": 1,
+              "name": "Einstein Games — Overall Score Accountability",
+              "thresholds": {
+                "superGreen": "Branch average total score 8 or higher",
+                "green": "Branch average total score 7 or higher",
+                "red": "Branch average total score less than 7"
+              },
+              "status": "super_green",
+              "currentValue": "Branch avg 10.3 last 3 weeks — best in DFW+Tampa. Week 4 attendance dipped (Nick, Robert call-outs).",
+              "notes": "Confirmed super green 6/16. Average 10.3 over last 3 weeks, best in DFW and Tampa. Score improved through prior weeks. Current weak point: attendance (Robert call-out 6/16, Nick). Grant going in field personally to pull reviews. Brian questioned schedule template blue days during Mike vacation — Grant defended, Mike backed him up. No low performers to target for safety or reviews this cycle.",
+              "nextAction": "Monitor attendance weekly. Grant to continue pulling reviews proactively in field. Clarify multiplier card cap with Madison (Garland appeared to boost a 13-pt category above 13 max).",
+              "lastUpdated": "2026-06-16"
+            },
+            {
+              "id": 2,
+              "name": "Hiring Targets",
+              "thresholds": {
+                "superGreen": "FTW branch 100%+ staffing for qtr; People Analyzer reviewed; C players cleared or have action plans; eNPS cleared by end of May",
+                "green": "FTW branch 100%+ staffing for qtr; People Analyzer reviewed; C players cleared or have action plans; eNPS cleared by end of June",
+                "red": "FTW averaging 95% or less staffing OR eNPS board not cleared"
+              },
+              "status": "super_green",
+              "currentValue": "14.4 FTE = 113% of target. Lead locked — Devon (paternity), Joseph (injured), Eloy (quit 6/13). Next availability July 5.",
+              "notes": "Mike confirmed 14.4 FTE (Brian's report had incorrect 12.8 number). At 113% = super green. Critically lead locked with 7 leads and 9 co-pilots. Devon reversed paternity leave decision. Joseph still injured, timeline unknown. Eloy quit Friday 6/13 heading to fire academy in ~45 days. Branch has 5th truck but can't run it without leads. Sully (referral from Robert) is top candidate — strong communication, confidence gap only. Tim and Keenan longest-tenured lead-in-trainings, progressing slowly. Unintended posting created ~47 applicant backlog to disposition.",
+              "nextAction": "Grant + Erik to pick 2 lead candidates and begin dedicated training. Fast-track Sully to lead by July 1. Disposition ~47 applicants. If internal promotion not ready by July, discuss Dallas lead transfer (Lucas or Farik, both in North Richland Hills).",
+              "lastUpdated": "2026-06-16"
+            },
+            {
+              "id": 3,
+              "name": "Branch and Individual Sales Goals / Estimate Accuracy",
+              "thresholds": {
+                "superGreen": "All managers at 110%+ to goal with conversion rate at or above company average",
+                "green": "All managers at 100%+ to goal with conversion rate at or above company average",
+                "red": "Any manager below 100% to goal or below company average conversion rate"
+              },
+              "status": "at_risk",
+              "currentValue": "Grant ~25% MTD June, 8% conversion. Erik ~49% MTD June, 30% conversion. Branch booked to July 5. Quarter tracking red unless July significantly overperforms.",
+              "notes": "Branch fully booked to July 5, artificially depressing conversion rates. Grant focused on field and hiring this month, limited desk time. Both managers were ~70% in May. Quarter will likely go red unless July blows out. Mike and Grant discussed: 120-125% July could cover the miss. Grant targeting sales blocks second half of June.",
+              "nextAction": "Both managers lock in aggressive sales push in July. Grant to use sales blocks June 16-30. Review quarterly math with Mike this week.",
+              "lastUpdated": "2026-06-16"
+            },
+            {
+              "id": 4,
+              "name": "People Analyzer or Flex Personal Goal",
+              "thresholds": {
+                "superGreen": "Less than 5% C players by EOQ; eNPS board cleared by end of May",
+                "green": "Less than 10% C players by EOQ; eNPS board cleared by end of June",
+                "red": "More than 10% C players at EOQ or eNPS board not cleared by June"
+              },
+              "status": "super_green",
+              "currentValue": "No current C players. Tim and Keenan flagged as potential future C players — coaching in progress.",
+              "notes": "Confirmed super green 6/16. No C players. Tim (complaints, slower pace, arrives at grace period boundary daily) and Keenan are potential future C players. Grant not yet classifying — wants full training cycle feedback first. Keenan performed well with Erik on a job 6/15. Root cause appears to be lead trainer quality more than individual performance — FW leads don't all have strong training instincts. eNPS board cleared.",
+              "nextAction": "Continue Tim/Keenan coaching cycle. Deliver structured feedback to both from training day. Monitor trainer quality as the upstream issue.",
+              "lastUpdated": "2026-06-16"
+            },
+            {
+              "id": 5,
+              "name": "Scrum Accountability",
+              "thresholds": {
+                "superGreen": "Scrum scorecard average 90+ (starting June/July); minimum 5 scorecards",
+                "green": "Scrum scorecard average 80+ (starting June/July); minimum 5 scorecards",
+                "red": "Scrum scorecard average less than 80 or fewer than 5 scorecards"
+              },
+              "status": "blocked",
+              "currentValue": "Not started",
+              "notes": "Confirmed blocked 6/16 pending Brian Herzig rollout. Brian also reviewed Grant's schedule template during Mike's vacation and challenged the blue days structure. Grant defended it; Mike backed him up.",
+              "nextAction": "Standby pending Brian rollout. No tracking pulse needed until rollout announced.",
+              "lastUpdated": "2026-06-16"
+            }
+          ]
+        },
+        {
+          "id": "erik-orama",
+          "name": "Erik Orama",
+          "role": "Ops",
+          "goals": [
+            {
+              "id": 1,
+              "name": "Einstein Games — Samsara Focus + Damages",
+              "thresholds": {
+                "superGreen": "Branch average score for Samsara and Damages 8 or higher",
+                "green": "Branch average score for Samsara and Damages 7 or higher",
+                "red": "Branch average score for Samsara and Damages less than 7"
+              },
+              "status": "super_green",
+              "currentValue": "Branch avg 10.3. Lowest active driver Nick at 97. Previous low Elijah (94) off the team.",
+              "notes": "Confirmed super green 6/16. Foam mattress damage from 5/19 (Bill/Marcy job) fully diluted as hours increased. Elijah, previous low scorer at 94, is no longer on team. All active drivers scoring extremely well — lowest is Nick at 97. Elijah lost Goodnight truck driving privileges after chicken nugget incident (eating in truck, caught on camera). Team takes Samsara seriously. Grant dismissing alerts appropriately; Mike reviews every dismissal. Dashboard missed last week update (Mike vacation), catching up 6/17-6/18.",
+              "nextAction": "Mike to finish Drivers Ed dashboard update by 6/17-6/18. Grant + Erik to deliver 300-mile milestone praises when dashboard updates.",
+              "lastUpdated": "2026-06-16"
+            },
+            {
+              "id": 2,
+              "name": "Individual Sales Goal / Improve Estimate Accuracy",
+              "thresholds": {
+                "superGreen": "Reach 105% to goal and at or above company average $ conversion rate",
+                "green": "Reach 100% to goal and at or above company average $ conversion rate",
+                "red": "Below 100% or below company average $ conversion rate"
+              },
+              "status": "at_risk",
+              "currentValue": "49% MTD June, 30% conversion. Missed 5 working days. Quarter tracking red unless July significantly overperforms.",
+              "notes": "Erik at 49% MTD with 30% conversion — strongest FW sales performer this month. Missed 5 working days (field time) and still at 49%, which Mike noted favorably. Both managers were ~70% in May. Quarter will likely go red without strong July. Plan: 120%+ July to offset quarterly shortfall.",
+              "nextAction": "Aggressive July sales push. Target 120%+ to offset quarterly shortfall. Continue sales blocks.",
+              "lastUpdated": "2026-06-16"
+            },
+            {
+              "id": 3,
+              "name": "Driver Safety Coaching / Retraining",
+              "thresholds": {
+                "superGreen": "90%+ coachings issued and retraining completed",
+                "green": "80%+ coachings issued and retraining completed",
+                "red": "Less than 80% coachings issued and retraining completed"
+              },
+              "status": "super_green",
+              "currentValue": "100% compliance. No Rippling warnings issued. All active drivers above threshold. Lowest Nick at 97.",
+              "notes": "Confirmed super green 6/16. No unsafe driving warnings needed — all drivers above threshold. Dashboard missed last week (Mike vacation), catching up 6/17-6/18. Grant expects only 300-mile milestone praises when dashboard updates. Lloyd inattentive driving situation from prior sync not referenced — may be resolved.",
+              "nextAction": "Mike to finish dashboard update by 6/17-6/18. Deliver 300-mile praises when dashboard updates.",
+              "lastUpdated": "2026-06-16"
+            },
+            {
+              "id": 4,
+              "name": "Praise Goal",
+              "thresholds": {
+                "superGreen": "48+ praise entries (4 per week)",
+                "green": "36+ praise entries (3 per week)",
+                "red": "Fewer than 36 praise entries"
+              },
+              "status": "at_risk",
+              "currentValue": "~15 logged Q2 (Week 7). Overall pace ~2.1/wk; last 4 weeks pace ~3/wk.",
+              "notes": "At ~15 entries through Q2 Week 7. Overall pace 2.1/wk is below green floor (3/wk). However last 4 weeks pace is ~3/wk (up from 3 at 5/19 sync). Needs 3.5/wk in remaining 6 weeks to hit green (36 total). Has notes repository but hasn't been delivering face-to-face consistently — personnel and lead changes pulling focus. Mike emphasized using the word 'praise' explicitly so movers recognize what it looks like.",
+              "nextAction": "Increase cadence to 3.5+ entries/week. Prioritize face-to-face delivery. Use the word 'praise' explicitly when delivering.",
+              "lastUpdated": "2026-06-16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mckinney",
+      "name": "McKinney",
+      "lastSync": "2026-06-30",
+      "managers": [
+        {
+          "id": "khevan-dueck",
+          "name": "Khevan Dueck",
+          "role": "BM",
+          "goals": [
+            {
+              "id": 1,
+              "name": "Einstein Games — Overall Score Accountability",
+              "thresholds": {
+                "superGreen": "Branch average total score 8 or higher",
+                "green": "Branch average total score 7 or higher",
+                "red": "Branch average total score less than 7"
+              },
+              "status": "green",
+              "currentValue": "7.2 avg QTD (goal 7.0). This week 6.8.",
+              "notes": "Green confirmed 6/30. Weekly scores: 9, 8, 6, 5, 6, 7, 7, 6.8. Avg 7.2 vs 7.0 goal. Contract efficiency is biggest gap. Low performers: Nick Sterling (zero driver score + bad CE), Shane (zero CE), Kalik, Matthew, Noah, Jorge, Daniel A. Reviews near zero across DFW all quarter (except week 3 with multiplier). Mike walked Khevan through data breakdown tool during sync — showed mover-level CE deep dives, job-level start/stop timing. Customer-caused delays (access waits) can be excluded. Khevan may correct some historical data.",
+              "nextAction": "Coach low performers on CE using data breakdown tool. Deep dive start/stop timing per contract. Review and correct customer-delay exceptions weekly.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 2,
+              "name": "Hiring Targets",
+              "thresholds": {
+                "superGreen": "MCK branch 100%+ staffing for qtr; People Analyzer reviewed; C players cleared or have action plans; eNPS cleared by end of May",
+                "green": "MCK branch 100%+ staffing for qtr; People Analyzer reviewed; C players cleared or have action plans; eNPS cleared by end of June",
+                "red": "MCK averaging 95% or less staffing OR eNPS board not cleared"
+              },
+              "status": "red",
+              "currentValue": "19.6 FTE vs 22.8 July target. Needs 4 hires.",
+              "notes": "Red confirmed 6/30. 19.6 FTE vs 22.8 July target. Deficit of 3.2 (4 hires needed). Branch is lead-locked — 5 leads, 5 co-pilots (even split). Cannot hire meaningfully until co-pilots promote. Candidates: Elijah, Brooklyn, Victor (need driving certification). Corey has license issue (ticket processing). Anthony has US license <2 years (Donna said no). Trial days eliminated starting Monday — faster hiring once leads are in place. Hired 20 in 15 weeks but still -4 from churn. Daniel and Carlos both on vacation in July. Andrew being deployed.",
+              "nextAction": "Khevan to schedule driving certifications for Elijah, Brooklyn, Victor. Use one of Zach sales blocks for training time. Address Corey/Anthony license issues. Promote leads by next schedule period.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 3,
+              "name": "Branch and Individual Sales Goals / Estimate Accuracy",
+              "thresholds": {
+                "superGreen": "All managers at 110%+ to goal with conversion rate at or above company average",
+                "green": "All managers at 100%+ to goal with conversion rate at or above company average",
+                "red": "Any manager below 100% to goal or below company average conversion rate"
+              },
+              "status": "red",
+              "currentValue": "Khevan at 54% June (was 73% May). Zach at 122% June (156% May).",
+              "notes": "Red for Khevan at 54% June, down from 73% May. Zach super green at 156% May, on track 122% June. Mike confirmed need to push hard on July sales. Branch mixed but Khevan individual miss drives the red.",
+              "nextAction": "Khevan to push July sales. Zach maintaining strong pace.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 4,
+              "name": "People Analyzer or Flex Personal Goal",
+              "thresholds": {
+                "superGreen": "Less than 5% C players by EOQ; eNPS board cleared by end of May",
+                "green": "Less than 10% C players by EOQ; eNPS board cleared by end of June",
+                "red": "More than 10% C players at EOQ or eNPS board not cleared by June"
+              },
+              "status": "green",
+              "currentValue": "NPS board cleared. C players need follow-up.",
+              "notes": "Green confirmed 6/30. NPS board cleared. No C players among tenured staff. Vast majority of team is brand new — too early to evaluate. No established players flagged.",
+              "nextAction": "Monitor. Re-evaluate newer hires as they get tenure.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 5,
+              "name": "Scrum Accountability",
+              "thresholds": {
+                "superGreen": "Scrum scorecard average 90+ (starting June/July); minimum 5 scorecards",
+                "green": "Scrum scorecard average 80+ (starting June/July); minimum 5 scorecards",
+                "red": "Scrum scorecard average less than 80 or fewer than 5 scorecards"
+              },
+              "status": "blocked",
+              "currentValue": "Not started",
+              "notes": "Still blocked pending Brian Herzig company-wide rollout.",
+              "nextAction": "Standby pending Brian rollout.",
+              "lastUpdated": "2026-06-30"
+            }
+          ]
+        },
+        {
+          "id": "zach-krodel",
+          "name": "Zach Krodel",
+          "role": "Ops",
+          "goals": [
+            {
+              "id": 1,
+              "name": "Einstein Games — Samsara Focus + Damages",
+              "thresholds": {
+                "superGreen": "Branch average score for Samsara and Damages 8 or higher",
+                "green": "Branch average score for Samsara and Damages 7 or higher",
+                "red": "Branch average score for Samsara and Damages less than 7"
+              },
+              "status": "red",
+              "currentValue": "6.6 avg QTD (weekly: 6, 9, 6, 5, 6, 8). QTD Samsara 78, weekly 93.",
+              "notes": "Red confirmed 6/30. QTD Samsara Einstein Games avg 6.6, below 7.0 green threshold. Weekly scores: 6, 9, 6, 5, 6, 8. QTD Samsara score 78, most recent week 93 showing improvement.",
+              "nextAction": "Continue Samsara coaching focus. Need sustained improvement to reach green by EOQ.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 2,
+              "name": "Individual Sales Goal / Improve Estimate Accuracy",
+              "thresholds": {
+                "superGreen": "Reach 105% to goal and at or above company average $ conversion rate",
+                "green": "Reach 100% to goal and at or above company average $ conversion rate",
+                "red": "Below 100% or below company average $ conversion rate"
+              },
+              "status": "super_green",
+              "currentValue": "156% May, on track for 122% June.",
+              "notes": "Super green confirmed 6/30. Zach at 156% in May and on track for 122% in June. Strongest sales performer in the branch.",
+              "nextAction": "Maintain sales cadence.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 3,
+              "name": "Driver Safety Coaching / Retraining",
+              "thresholds": {
+                "superGreen": "90%+ coachings issued and retraining completed",
+                "green": "80%+ coachings issued and retraining completed",
+                "red": "Less than 80% coachings issued and retraining completed"
+              },
+              "status": "super_green",
+              "currentValue": "No outstanding warnings. 100% compliance.",
+              "notes": "Super green confirmed 6/30. No outstanding coaching warnings for McKinney on the driver safety dashboard.",
+              "nextAction": "Continue monitoring. Deliver praises at milestones.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 4,
+              "name": "Praise Goal",
+              "thresholds": {
+                "superGreen": "48+ praise entries (4 per week)",
+                "green": "36+ praise entries (3 per week)",
+                "red": "Fewer than 36 praise entries"
+              },
+              "status": "red",
+              "currentValue": "Zero entries.",
+              "notes": "Red confirmed 6/30. Both Zach and Khevan at zero. 9 easy praise opportunities sitting in driver safety dashboard (milestone praises — Wade 700mi, Carlos 1104mi, etc.). Need 48 by end of July. Mike addressed directly during sync. Khevan and Zach may have given verbal praises but failed to log them.",
+              "nextAction": "Log 9 driver safety milestone praises from dashboard immediately. Start daily praise logging cadence.",
+              "lastUpdated": "2026-06-30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "garland",
+      "name": "Garland",
+      "lastSync": "2026-06-30",
+      "managers": [
+        {
+          "id": "jack-davis",
+          "name": "Jack Davis",
+          "role": "BM",
+          "goals": [
+            {
+              "id": 1,
+              "name": "Einstein Games — Overall Score Accountability",
+              "thresholds": {
+                "superGreen": "Branch average total score 8 or higher",
+                "green": "Branch average total score 7 or higher",
+                "red": "Branch average total score less than 7"
+              },
+              "status": "super_green",
+              "currentValue": "QTD avg 8.7 (super green). This week 8.4. Competing with Tampa for final week.",
+              "notes": "Super green confirmed 6/30 sync. QTD avg 8.7 (weekly: 9, 9, 8.8, 8, 8.4). MJ camera events resolved (one coached, one dismissed). Marcus Patterson score glitch -- zero despite received review, Madison investigating. QR codes arriving 7/1. Competing with Tampa for final week. Michael Weathers contract efficiency needs coaching (new to leading). Braxton had two pings that hurt current week score.",
+              "nextAction": "Deploy QR codes when they arrive 7/1. Follow up with Madison on Marcus Patterson score glitch. Coach Michael Weathers on contract efficiency and on-site start-up time.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 2,
+              "name": "Hiring Targets",
+              "thresholds": {
+                "superGreen": "GAR branch 100%+ staffing for qtr; People Analyzer reviewed; C players cleared or have action plans; eNPS cleared by end of May",
+                "green": "GAR branch 100%+ staffing for qtr; People Analyzer reviewed; C players cleared or have action plans; eNPS cleared by end of June",
+                "red": "GAR averaging 95% or less staffing OR eNPS board not cleared"
+              },
+              "status": "super_green",
+              "currentValue": "13.8 FTE vs 11.4 July target = 121%. Two new hires onboarding.",
+              "notes": "Super green confirmed 6/30 sync. 13.8 FTE vs 11.4 July target = 121%. Blake Jones onboarded, Robert \"Bob\" Lyle being added (open availability, split days off Mon/Fri). Braxton transfer uncertain -- housing fell through in FW, may go MCK, girlfriend pregnant. Temporarily scheduled 2 more weeks, not offboarded. Keegan still on workers comp, PT 3x/week, at least another week out. Mitchell next lead candidate -- Jack doing field assessment Thursday 7/3. Co-pilot-to-lead ratio still heavy.",
+              "nextAction": "Finalize Bob Lyle schedule (Mon/Fri off). Clarify Braxton transfer timeline. Assess Mitchell on Thursday field day. Re-engage Keegan when PT clears.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 3,
+              "name": "Branch and Individual Sales Goals / Estimate Accuracy",
+              "thresholds": {
+                "superGreen": "All managers at 110%+ to goal with conversion rate at or above company average",
+                "green": "All managers at 100%+ to goal with conversion rate at or above company average",
+                "red": "Any manager below 100% to goal or below company average conversion rate"
+              },
+              "status": "super_green",
+              "currentValue": "June 100%. May ~100% adjusted. QTD avg ~110-112%. Conversion rate 120-139%.",
+              "notes": "Super green confirmed 6/30 sync. EMMA target WAS adjusted in June (resolved -- was 35-day carryover from 5/26). June hit 100% at correct ~47k BM target. May was ~100% adjusted. QTD average ~110-112%. Jack says he has only missed August in the last two years. Conversion rate strong at 120-139%.",
+              "nextAction": "Maintain sales cadence. EMMA target issue resolved -- no further action needed.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 4,
+              "name": "People Analyzer or Flex Personal Goal",
+              "thresholds": {
+                "superGreen": "Less than 5% C players by EOQ; eNPS board cleared by end of May",
+                "green": "Less than 10% C players by EOQ; eNPS board cleared by end of June",
+                "red": "More than 10% C players at EOQ or eNPS board not cleared by June"
+              },
+              "status": "super_green",
+              "currentValue": "Brandon only C-player (<5%). Moving to mover training app beta for better tracking.",
+              "notes": "Super green confirmed 6/30 sync. Brandon remains the only C-player -- performance and attendance (back problems, calls out after 2 consecutive days, does not want to be a lead). Jack moving him to mover training app beta instead of books. App will auto-lock progress if stale and force management check-in -- better coaching tool than current booklet system. Garland volunteered as first beta branch. Jack walking through app 7/1, rollout at training day next week.",
+              "nextAction": "Onboard Jack to training app beta 7/1. Transition Brandon to app-based tracking. Continue deprioritization on schedule if no improvement.",
+              "lastUpdated": "2026-06-30"
+            },
+            {
+              "id": 5,
+              "name": "Scrum Accountability",
+              "thresholds": {
+                "superGreen": "Scrum scorecard average 90+ (starting June/July); minimum 5 scorecards",
+                "green": "Scrum scorecard average 80+ (starting June/July); minimum 5 scorecards",
+                "red": "Scrum scorecard average less than 80 or fewer than 5 scorecards"
+              },
+              "status": "blocked",
+              "currentValue": "Not happening this quarter. Brian red on his QGR.",
+              "notes": "Blocked confirmed 6/30 sync. Jack noted Brian is red on his QGR for this. Two weeks left in quarter -- confirmed not coming. Mike agreed it will not happen this quarter.",
+              "nextAction": "No action this quarter. Revisit Q3.",
+              "lastUpdated": "2026-06-30"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

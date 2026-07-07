@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Q2 2026 QG Weekly Check-In — Einstein Moving</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange: #FF6C00;
+      --orange-dark: #CC5600;
+      --orange-light: #FFF3E8;
+      --bg: #F2F4F7;
+      --card: #FFFFFF;
+      --border: #E2E6EA;
+      --text: #1A1D23;
+      --text-muted: #6B7280;
+      --text-light: #9CA3AF;
+
+      --sg-bg: #00C04B; --sg-text: #FFFFFF; --sg-border: #00A03E;
+      --g-bg: #DCFCE7;  --g-text: #166534;  --g-border: #86EFAC;
+      --ar-bg: #FEF3C7; --ar-text: #92400E; --ar-border: #FCD34D;
+      --r-bg: #FEE2E2;  --r-text: #991B1B;  --r-border: #FCA5A5;
+      --bl-bg: #EDE9FE; --bl-text: #5B21B6; --bl-border: #A78BFA;
+      --nd-bg: #F3F4F6; --nd-text: #6B7280; --nd-border: #D1D5DB;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* HEADER */
+    .header {
+      background: var(--orange);
+      color: #fff;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .header-left { display: flex; align-items: center; gap: 12px; }
+    .header-logo { font-size: 20px; font-weight: 900; letter-spacing: -0.5px; color: #fff; }
+    .header-logo span { opacity: 0.7; font-weight: 400; }
+    .header-title {
+      font-size: 15px; font-weight: 500; opacity: 0.9;
+      border-left: 1px solid rgba(255,255,255,0.35); padding-left: 12px;
+    }
+    .header-meta { font-size: 12px; opacity: 0.8; text-align: right; }
+
+    /* VIEW-ONLY BANNER */
+    .view-only-banner {
+      background: var(--ar-bg);
+      color: var(--ar-text);
+      border-bottom: 1px solid var(--ar-border);
+      padding: 10px 24px;
+      font-size: 13px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    /* BRANCH TABS */
+    .tabs-bar {
+      background: #fff;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      padding: 0 24px;
+      position: sticky;
+      top: 60px;
+      z-index: 99;
+      overflow-x: auto;
+    }
+    .tab-btn {
+      padding: 14px 20px;
+      font-size: 13px; font-weight: 500;
+      color: var(--text-muted);
+      background: none; border: none;
+      border-bottom: 3px solid transparent;
+      cursor: pointer; white-space: nowrap;
+      transition: all 0.15s;
+      display: flex; align-items: center; gap: 8px;
+      margin-bottom: -2px;
+      font-family: inherit;
+    }
+    .tab-btn:hover { color: var(--orange); }
+    .tab-btn.active { color: var(--orange); border-bottom-color: var(--orange); font-weight: 700; }
+    .tab-sync-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--nd-border); }
+    .tab-sync-dot.has-data { background: #34D399; }
+
+    /* CONTENT */
+    .content { padding: 24px; max-width: 1200px; margin: 0 auto; }
+    .branch-panel { display: none; }
+    .branch-panel.active { display: block; }
+
+    .branch-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; flex-wrap: wrap; gap: 8px; }
+    .branch-name { font-size: 22px; font-weight: 700; color: var(--text); }
+    .last-sync-badge { font-size: 12px; padding: 4px 10px; border-radius: 20px; font-weight: 500; }
+    .last-sync-badge.no-sync { background: var(--nd-bg); color: var(--nd-text); }
+    .last-sync-badge.has-sync { background: var(--sg-bg); color: var(--sg-text); }
+
+    /* MANAGER CARD */
+    .manager-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 24px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .manager-header {
+      padding: 14px 20px;
+      background: #FAFBFC;
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    }
+    .manager-name { font-size: 16px; font-weight: 700; color: var(--text); }
+    .role-pill {
+      font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 20px;
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .role-bm { background: var(--orange-light); color: var(--orange-dark); }
+    .role-ops { background: #EFF6FF; color: #1D4ED8; }
+    .role-fm { background: #F0FDF4; color: #166534; }
+    .checkin-flag {
+      margin-left: auto;
+      font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px;
+    }
+    .checkin-flag.done { background: var(--g-bg); color: var(--g-text); border: 1px solid var(--g-border); }
+    .checkin-flag.pending { background: var(--ar-bg); color: var(--ar-text); border: 1px solid var(--ar-border); }
+
+    /* GOALS TABLE */
+    .goals-table { width: 100%; border-collapse: collapse; }
+    .goals-table th {
+      padding: 10px 16px;
+      text-align: left;
+      font-size: 11px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.6px;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      background: #FAFBFC;
+    }
+    .goals-table th:nth-child(1) { width: 28px; }
+    .goals-table th:nth-child(2) { width: 20%; }
+    .goals-table th:nth-child(3) { width: 120px; }
+    .goals-table th:nth-child(4) { width: 18%; }
+
+    .goals-table td {
+      padding: 12px 16px;
+      vertical-align: top;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+    }
+    .goals-table tr:hover td { background: #FAFBFC; }
+
+    .goal-num { color: var(--text-light); font-weight: 700; font-size: 12px; }
+    .goal-name { font-weight: 500; color: var(--text); }
+
+    /* STATUS BADGE */
+    .status-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 4px 10px; border-radius: 20px;
+      font-size: 11px; font-weight: 700;
+      border: 1px solid; white-space: nowrap;
+    }
+    .status-badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; }
+    .status-super_green { background: var(--sg-bg); color: var(--sg-text); border-color: var(--sg-border); }
+    .status-super_green::before { background: var(--sg-text); }
+    .status-green { background: var(--g-bg); color: var(--g-text); border-color: var(--g-border); }
+    .status-green::before { background: var(--g-text); }
+    .status-at_risk { background: var(--ar-bg); color: var(--ar-text); border-color: var(--ar-border); }
+    .status-at_risk::before { background: var(--ar-text); }
+    .status-red { background: var(--r-bg); color: var(--r-text); border-color: var(--r-border); }
+    .status-red::before { background: var(--r-text); }
+    .status-blocked { background: var(--bl-bg); color: var(--bl-text); border-color: var(--bl-border); }
+    .status-blocked::before { background: var(--bl-text); }
+    .status-no_data { background: var(--nd-bg); color: var(--nd-text); border-color: var(--nd-border); }
+    .status-no_data::before { background: var(--nd-border); }
+
+    .self-report-line {
+      margin-top: 6px;
+      font-size: 11px;
+      color: var(--text-muted);
+      display: flex; align-items: center; gap: 5px; flex-wrap: wrap;
+    }
+
+    /* THRESHOLDS */
+    .thresholds { display: flex; flex-direction: column; gap: 3px; }
+    .threshold-row { display: flex; gap: 6px; font-size: 11px; line-height: 1.4; }
+    .threshold-label { font-weight: 700; flex-shrink: 0; width: 16px; }
+    .threshold-sg { color: var(--sg-bg); }
+    .threshold-g { color: var(--g-text); }
+    .threshold-r { color: var(--r-text); }
+    .threshold-text { color: var(--text-muted); }
+
+    .notes-text { color: var(--text); font-size: 13px; line-height: 1.5; }
+    .next-action-text { color: var(--text); font-size: 12px; line-height: 1.5; }
+    .next-action-text.empty { color: var(--text-light); font-style: italic; }
+    .current-value { font-size: 12px; font-weight: 500; color: var(--text-muted); margin-top: 4px; }
+    .updated-date { font-size: 11px; color: var(--text-light); margin-top: 4px; }
+
+    /* CHECK-IN SECTION */
+    .checkin-section {
+      border-top: 2px solid var(--orange);
+      background: #FFFBF7;
+      padding: 16px 20px 20px;
+    }
+    .checkin-title {
+      font-size: 13px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.6px;
+      color: var(--orange-dark);
+      margin-bottom: 4px;
+    }
+    .checkin-sub { font-size: 12px; color: var(--text-muted); margin-bottom: 14px; }
+
+    .checkin-goal {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-bottom: 10px;
+    }
+    .checkin-goal-head {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; margin-bottom: 8px; flex-wrap: wrap;
+    }
+    .checkin-goal-name { font-size: 13px; font-weight: 700; }
+    .status-select {
+      font-family: inherit;
+      font-size: 13px; font-weight: 500;
+      padding: 7px 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: #fff;
+      cursor: pointer;
+      min-width: 170px;
+    }
+    .status-select.sel-super_green { background: var(--sg-bg); color: var(--sg-text); border-color: var(--sg-border); font-weight: 700; }
+    .status-select.sel-green { background: var(--g-bg); color: var(--g-text); border-color: var(--g-border); font-weight: 700; }
+    .status-select.sel-red { background: var(--r-bg); color: var(--r-text); border-color: var(--r-border); font-weight: 700; }
+    .status-select.sel-blocked { background: var(--bl-bg); color: var(--bl-text); border-color: var(--bl-border); font-weight: 700; }
+    .status-select.missing { border-color: var(--r-border); box-shadow: 0 0 0 2px var(--r-bg); }
+
+    .plan-input {
+      width: 100%;
+      font-family: inherit;
+      font-size: 13px;
+      line-height: 1.5;
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      resize: vertical;
+      min-height: 56px;
+    }
+    .plan-input:focus, .status-select:focus { outline: 2px solid var(--orange); outline-offset: 0; }
+
+    .checkin-footer { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 4px; }
+    .submit-btn {
+      font-family: inherit;
+      font-size: 14px; font-weight: 700;
+      color: #fff;
+      background: var(--orange);
+      border: none;
+      border-radius: 6px;
+      padding: 10px 22px;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .submit-btn:hover { background: var(--orange-dark); }
+    .submit-btn:disabled { background: var(--text-light); cursor: default; }
+    .submit-note { font-size: 12px; color: var(--text-muted); }
+    .submit-note.ok { color: var(--g-text); font-weight: 700; }
+    .submit-note.err { color: var(--r-text); font-weight: 700; }
+
+    /* HISTORY */
+    .history { margin-top: 12px; }
+    .history summary {
+      cursor: pointer;
+      font-size: 12px; font-weight: 500;
+      color: var(--text-muted);
+    }
+    .history-entry {
+      margin-top: 8px;
+      padding: 10px 12px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 12px;
+    }
+    .history-week { font-weight: 700; margin-bottom: 4px; }
+    .history-goal { margin: 3px 0; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+    .history-goal .status-badge { font-size: 10px; padding: 2px 8px; }
+
+    /* LEGEND */
+    .legend {
+      display: flex; gap: 12px; flex-wrap: wrap;
+      margin-bottom: 20px;
+      padding: 12px 16px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-muted); }
+
+    .loading, .load-error {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-muted);
+    }
+    .load-error { color: var(--r-text); }
+
+    @media (max-width: 768px) {
+      .content { padding: 12px; }
+      .goals-table th:nth-child(4), .goals-table td:nth-child(4) { display: none; }
+      .goals-table th:nth-child(5), .goals-table td:nth-child(5) { display: none; }
+      .header-title { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-left">
+    <div class="header-logo">Einstein <span>Moving</span></div>
+    <div class="header-title">Q2 2026 QG Weekly Check-In</div>
+  </div>
+  <div class="header-meta" id="header-meta"></div>
+</header>
+
+<div class="view-only-banner" id="view-only-banner" style="display:none;">
+  This link is view-only — check-ins can't be submitted. Ask Mike for the full check-in link.
+</div>
+
+<nav class="tabs-bar" id="tabs-bar"></nav>
+
+<main class="content" id="content">
+  <div class="loading">Loading dashboard…</div>
+</main>
+
+<script>
+// ── GITHUB DATA LAYER ─────────────────────────────────────────────────────────
+// This page is hosted on GitHub Pages with no server. Check-ins are saved as
+// commits to data/checkins.json in this same repo via the GitHub Contents API.
+// The write key rides in the URL fragment (#k=...) — it is never committed to
+// the repo and never sent to any server (fragments stay in the browser).
+
+const REPO = 'einsteinadmin/einstein-qg-checkin-29b162fd';
+const API_BASE = 'https://api.github.com/repos/' + REPO + '/contents/';
+const RAW_BASE = 'https://raw.githubusercontent.com/' + REPO + '/main/';
+
+const STATUS_LABELS = {
+  super_green: 'Super Green',
+  green: 'Green',
+  at_risk: 'At Risk',
+  red: 'Red',
+  blocked: 'Blocked',
+  no_data: 'No Data',
+  not_started: 'Not Started'
+};
+const VALID_STATUSES = ['super_green', 'green', 'red', 'blocked'];
+
+let STATE = null;        // { dashboard, checkins, weekOf }
+let CHECKINS_SHA = null; // sha of data/checkins.json for API writes
+let TOKEN = '';
+
+function resolveToken() {
+  const m = location.hash.match(/[#&]k=([^&]+)/);
+  if (m) {
+    TOKEN = decodeURIComponent(m[1]);
+    try { localStorage.setItem('qg_checkin_key', TOKEN); } catch {}
+    return;
+  }
+  try { TOKEN = localStorage.getItem('qg_checkin_key') || ''; } catch {}
+}
+
+function b64ToUtf8(b64) {
+  const bin = atob(b64.replace(/\s/g, ''));
+  const bytes = Uint8Array.from(bin, c => c.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
+
+function utf8ToB64(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = '';
+  bytes.forEach(b => { bin += String.fromCharCode(b); });
+  return btoa(bin);
+}
+
+function ghHeaders() {
+  const h = { 'Accept': 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' };
+  if (TOKEN) h['Authorization'] = 'Bearer ' + TOKEN;
+  return h;
+}
+
+async function ghReadFile(path) {
+  if (TOKEN) {
+    const res = await fetch(API_BASE + path, { headers: ghHeaders(), cache: 'no-store' });
+    if (!res.ok) throw new Error('GitHub API ' + res.status + ' reading ' + path);
+    const body = await res.json();
+    return { text: b64ToUtf8(body.content), sha: body.sha };
+  }
+  // No key: public raw read (view-only; may lag a few minutes behind)
+  const res = await fetch(RAW_BASE + path + '?t=' + new Date().getTime(), { cache: 'no-store' });
+  if (!res.ok) throw new Error('HTTP ' + res.status + ' reading ' + path);
+  return { text: await res.text(), sha: null };
+}
+
+async function loadState() {
+  const [dash, chk] = await Promise.all([
+    ghReadFile('data/qg-data.json'),
+    ghReadFile('data/checkins.json')
+  ]);
+  CHECKINS_SHA = chk.sha;
+  STATE = {
+    dashboard: JSON.parse(dash.text),
+    checkins: JSON.parse(chk.text).checkins || [],
+    weekOf: currentWeekOf()
+  };
+}
+
+// Monday of the current week (viewer's local time), formatted YYYY-MM-DD.
+function currentWeekOf() {
+  const now = new Date();
+  const day = now.getDay(); // 0 = Sun
+  const diff = day === 0 ? -6 : 1 - day;
+  const monday = new Date(now.getFullYear(), now.getMonth(), now.getDate() + diff);
+  const y = monday.getFullYear();
+  const m = String(monday.getMonth() + 1).padStart(2, '0');
+  const d = String(monday.getDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+}
+
+// Save a check-in: re-read latest checkins.json, replace this manager+week,
+// commit via Contents API. Retries on sha conflicts (two managers submitting
+// at the same moment).
+async function saveCheckin(entry) {
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    const latest = await ghReadFile('data/checkins.json');
+    const store = JSON.parse(latest.text);
+    store.checkins = (store.checkins || []).filter(
+      c => !(c.managerId === entry.managerId && c.weekOf === entry.weekOf)
+    );
+    store.checkins.push(entry);
+
+    const res = await fetch(API_BASE + 'data/checkins.json', {
+      method: 'PUT',
+      headers: ghHeaders(),
+      body: JSON.stringify({
+        message: `Check-in: ${entry.managerName} — week of ${entry.weekOf}`,
+        content: utf8ToB64(JSON.stringify(store, null, 2) + '\n'),
+        sha: latest.sha
+      })
+    });
+
+    if (res.ok) {
+      const body = await res.json();
+      CHECKINS_SHA = body.content.sha;
+      STATE.checkins = store.checkins;
+      return;
+    }
+    if (res.status === 409 || res.status === 422) continue; // sha conflict — retry
+    if (res.status === 401 || res.status === 403) throw new Error('key not accepted — ask Mike for a fresh link');
+    throw new Error('GitHub API ' + res.status);
+  }
+  throw new Error('too many simultaneous submissions — try again');
+}
+
+// ── RENDERING ─────────────────────────────────────────────────────────────────
+
+function esc(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+function fmtWeek(weekOf) {
+  const [y, m, d] = weekOf.split('-').map(Number);
+  return new Date(y, m - 1, d).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+function fmtStamp(iso) {
+  return new Date(iso).toLocaleString('en-US', {
+    weekday: 'short', month: 'numeric', day: 'numeric', hour: 'numeric', minute: '2-digit'
+  });
+}
+
+function latestCheckin(managerId, weekOf) {
+  return STATE.checkins.find(c => c.managerId === managerId && c.weekOf === weekOf) || null;
+}
+
+function pastCheckins(managerId, weekOf) {
+  return STATE.checkins
+    .filter(c => c.managerId === managerId && c.weekOf !== weekOf)
+    .sort((a, b) => b.weekOf.localeCompare(a.weekOf));
+}
+
+function render() {
+  const { dashboard, weekOf } = STATE;
+  document.getElementById('header-meta').innerHTML =
+    `${esc(dashboard.meta.quarter)} &nbsp;|&nbsp; Ends ${esc(dashboard.meta.quarterEnd)}<br>Check-in week of ${esc(fmtWeek(weekOf))}`;
+  document.getElementById('view-only-banner').style.display = TOKEN ? 'none' : 'block';
+
+  const tabsBar = document.getElementById('tabs-bar');
+  const content = document.getElementById('content');
+  const activeTab = document.querySelector('.tab-btn.active');
+  const activeBranch = activeTab ? activeTab.dataset.branch : dashboard.branches[0].id;
+  tabsBar.innerHTML = '';
+  content.innerHTML = '';
+
+  dashboard.branches.forEach(branch => {
+    const hasData = branch.lastSync !== null;
+
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn' + (branch.id === activeBranch ? ' active' : '');
+    btn.dataset.branch = branch.id;
+    btn.innerHTML = `<span class="tab-sync-dot ${hasData ? 'has-data' : ''}"></span>${esc(branch.name)}`;
+    btn.onclick = () => switchTab(branch.id);
+    tabsBar.appendChild(btn);
+
+    const panel = document.createElement('div');
+    panel.className = 'branch-panel' + (branch.id === activeBranch ? ' active' : '');
+    panel.id = 'panel-' + branch.id;
+    panel.innerHTML = buildBranchPanel(branch);
+    content.appendChild(panel);
+  });
+
+  bindForms();
+}
+
+function switchTab(branchId) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.branch-panel').forEach(p => p.classList.remove('active'));
+  document.querySelector(`[data-branch="${branchId}"]`).classList.add('active');
+  document.getElementById('panel-' + branchId).classList.add('active');
+}
+
+function buildBranchPanel(branch) {
+  const syncLabel = branch.lastSync
+    ? `<span class="last-sync-badge has-sync">Last sync: ${esc(branch.lastSync)}</span>`
+    : `<span class="last-sync-badge no-sync">No sync yet</span>`;
+
+  const managerCards = branch.managers.map(mgr => buildManagerCard(branch, mgr)).join('');
+
+  return `
+    <div class="branch-header">
+      <div class="branch-name">${esc(branch.name)}</div>
+      ${syncLabel}
+    </div>
+    <div class="legend">
+      <div class="legend-item"><span class="status-badge status-super_green">Super Green</span> Exceeding target</div>
+      <div class="legend-item"><span class="status-badge status-green">Green</span> On track</div>
+      <div class="legend-item"><span class="status-badge status-red">Red</span> Behind</div>
+      <div class="legend-item"><span class="status-badge status-blocked">Blocked</span> External blocker</div>
+    </div>
+    ${managerCards}
+  `;
+}
+
+function buildManagerCard(branch, mgr) {
+  const roleClass = mgr.role === 'BM' ? 'role-bm' : mgr.role === 'Ops' ? 'role-ops' : 'role-fm';
+  const checkin = latestCheckin(mgr.id, STATE.weekOf);
+  const checkinByGoal = {};
+  if (checkin) checkin.goals.forEach(g => { checkinByGoal[g.goalId] = g; });
+
+  const flag = checkin
+    ? `<span class="checkin-flag done">✓ Checked in ${esc(fmtStamp(checkin.submittedAt))}</span>`
+    : `<span class="checkin-flag pending">Check-in due — week of ${esc(fmtWeek(STATE.weekOf))}</span>`;
+
+  const rows = mgr.goals.map(goal => {
+    const thresholds = `
+      <div class="thresholds">
+        <div class="threshold-row"><span class="threshold-label threshold-sg">SG</span><span class="threshold-text">${esc(goal.thresholds.superGreen)}</span></div>
+        <div class="threshold-row"><span class="threshold-label threshold-g">G</span><span class="threshold-text">${esc(goal.thresholds.green)}</span></div>
+        <div class="threshold-row"><span class="threshold-label threshold-r">R</span><span class="threshold-text">${esc(goal.thresholds.red)}</span></div>
+      </div>`;
+
+    const sr = checkinByGoal[goal.id];
+    const selfReport = sr
+      ? `<div class="self-report-line">This wk: <span class="status-badge status-${esc(sr.status)}">${esc(STATUS_LABELS[sr.status] || sr.status)}</span></div>`
+      : '';
+
+    const currentVal = goal.currentValue ? `<div class="current-value">${esc(goal.currentValue)}</div>` : '';
+    const updatedDate = goal.lastUpdated ? `<div class="updated-date">Updated ${esc(goal.lastUpdated)}</div>` : '';
+    const notesHtml = goal.notes
+      ? `<div class="notes-text">${esc(goal.notes)}</div>${updatedDate}`
+      : `<div class="notes-text" style="color:var(--text-light);font-style:italic;">No notes yet</div>`;
+    const nextActionHtml = goal.nextAction
+      ? `<div class="next-action-text">${esc(goal.nextAction)}</div>`
+      : `<div class="next-action-text empty">—</div>`;
+
+    return `
+      <tr>
+        <td class="goal-num">${goal.id}</td>
+        <td><div class="goal-name">${esc(goal.name)}</div></td>
+        <td>
+          <span class="status-badge status-${esc(goal.status)}">${esc(STATUS_LABELS[goal.status] || goal.status)}</span>
+          ${selfReport}
+          ${currentVal}
+        </td>
+        <td>${thresholds}</td>
+        <td>${notesHtml}</td>
+        <td>${nextActionHtml}</td>
+      </tr>`;
+  }).join('');
+
+  const formGoals = mgr.goals.map(goal => {
+    const sr = checkinByGoal[goal.id];
+    const preStatus = sr ? sr.status : (goal.status === 'blocked' ? 'blocked' : '');
+    const prePlan = sr ? sr.plan : '';
+    const opts = [
+      ['', '— select status —'],
+      ['super_green', 'Super Green'],
+      ['green', 'Green'],
+      ['red', 'Red'],
+      ['blocked', 'Blocked / N/A']
+    ].map(([val, label]) =>
+      `<option value="${val}" ${val === preStatus ? 'selected' : ''}>${label}</option>`
+    ).join('');
+
+    return `
+      <div class="checkin-goal" data-goal-id="${goal.id}">
+        <div class="checkin-goal-head">
+          <div class="checkin-goal-name">${goal.id}. ${esc(goal.name)}</div>
+          <select class="status-select ${preStatus ? 'sel-' + preStatus : ''}">${opts}</select>
+        </div>
+        <textarea class="plan-input" placeholder="Your plan this week to stay on track or push to Super Green…">${esc(prePlan)}</textarea>
+      </div>`;
+  }).join('');
+
+  const past = pastCheckins(mgr.id, STATE.weekOf);
+  const historyHtml = past.length ? `
+    <details class="history">
+      <summary>Previous check-ins (${past.length})</summary>
+      ${past.map(c => `
+        <div class="history-entry">
+          <div class="history-week">Week of ${esc(fmtWeek(c.weekOf))} — submitted ${esc(fmtStamp(c.submittedAt))}</div>
+          ${c.goals.map(g => {
+            const goalDef = mgr.goals.find(x => x.id === g.goalId);
+            return `<div class="history-goal">
+              <span class="status-badge status-${esc(g.status)}">${esc(STATUS_LABELS[g.status] || g.status)}</span>
+              <b>${esc(goalDef ? goalDef.name : 'Goal ' + g.goalId)}:</b>
+              <span>${esc(g.plan || 'No plan noted')}</span>
+            </div>`;
+          }).join('')}
+        </div>`).join('')}
+    </details>` : '';
+
+  const disabledAttr = TOKEN ? '' : 'disabled';
+
+  return `
+    <div class="manager-card" data-branch-id="${esc(branch.id)}" data-manager-id="${esc(mgr.id)}" data-manager-name="${esc(mgr.name)}">
+      <div class="manager-header">
+        <div class="manager-name">${esc(mgr.name)}</div>
+        <span class="role-pill ${roleClass}">${esc(mgr.role)}</span>
+        ${flag}
+      </div>
+      <table class="goals-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Goal</th>
+            <th>Status</th>
+            <th>Thresholds</th>
+            <th>Notes from Last Sync</th>
+            <th>Next Action</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+      <div class="checkin-section">
+        <div class="checkin-title">Weekly Check-In — Week of ${esc(fmtWeek(STATE.weekOf))}</div>
+        <div class="checkin-sub">${esc(mgr.name.split(' ')[0])}: pick where you stand on each goal right now, then lay out your plan for the week. Resubmitting updates this week's entry.</div>
+        ${formGoals}
+        <div class="checkin-footer">
+          <button class="submit-btn" ${disabledAttr}>Submit Check-In</button>
+          <span class="submit-note">${checkin ? `Last submitted ${esc(fmtStamp(checkin.submittedAt))}` : ''}</span>
+        </div>
+        ${historyHtml}
+      </div>
+    </div>`;
+}
+
+function bindForms() {
+  document.querySelectorAll('.status-select').forEach(sel => {
+    sel.addEventListener('change', () => {
+      sel.className = 'status-select' + (sel.value ? ' sel-' + sel.value : '');
+    });
+  });
+
+  document.querySelectorAll('.manager-card .submit-btn').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const card = btn.closest('.manager-card');
+      const note = card.querySelector('.submit-note');
+      const goals = [];
+      let missing = false;
+
+      card.querySelectorAll('.checkin-goal').forEach(div => {
+        const sel = div.querySelector('.status-select');
+        sel.classList.remove('missing');
+        if (!sel.value || !VALID_STATUSES.includes(sel.value)) {
+          missing = true;
+          sel.classList.add('missing');
+          return;
+        }
+        goals.push({
+          goalId: Number(div.dataset.goalId),
+          status: sel.value,
+          plan: div.querySelector('.plan-input').value.trim().slice(0, 4000)
+        });
+      });
+
+      if (missing) {
+        note.className = 'submit-note err';
+        note.textContent = 'Pick a status for every goal (use Blocked / N/A if it does not apply).';
+        return;
+      }
+
+      btn.disabled = true;
+      note.className = 'submit-note';
+      note.textContent = 'Submitting…';
+
+      try {
+        await saveCheckin({
+          branchId: card.dataset.branchId,
+          managerId: card.dataset.managerId,
+          managerName: card.dataset.managerName,
+          weekOf: STATE.weekOf,
+          submittedAt: new Date().toISOString(),
+          goals
+        });
+        render();
+      } catch (e) {
+        btn.disabled = false;
+        note.className = 'submit-note err';
+        note.textContent = 'Submit failed: ' + e.message;
+      }
+    });
+  });
+}
+
+async function init() {
+  resolveToken();
+  try {
+    await loadState();
+    render();
+  } catch (e) {
+    document.getElementById('content').innerHTML =
+      `<div class="load-error">Could not load dashboard data (${esc(e.message)}). Refresh to retry.</div>`;
+  }
+}
+
+// Refresh when the tab regains focus so managers see each other's updates
+document.addEventListener('visibilitychange', async () => {
+  if (document.visibilityState === 'visible' && STATE) {
+    try { await loadState(); render(); } catch {}
+  }
+});
+
+init();
+</script>
+</body>
+</html>
