@@ -372,6 +372,7 @@ const VALID_STATUSES = ['super_green', 'green', 'red', 'blocked'];
 let STATE = null;        // { dashboard, checkins, weekOf }
 let CHECKINS_SHA = null; // sha of data/checkins.json for API writes
 let TOKEN = '';
+let FORM_DIRTY = false;  // blocks auto-refresh while someone is mid-entry
 
 function resolveToken() {
   const m = location.hash.match(/[#&]k=([^&]+)/);
@@ -691,10 +692,17 @@ function buildManagerCard(branch, mgr) {
 }
 
 function bindForms() {
+  FORM_DIRTY = false; // fresh render matches saved state
+
   document.querySelectorAll('.status-select').forEach(sel => {
     sel.addEventListener('change', () => {
+      FORM_DIRTY = true;
       sel.className = 'status-select' + (sel.value ? ' sel-' + sel.value : '');
     });
+  });
+
+  document.querySelectorAll('.plan-input').forEach(ta => {
+    ta.addEventListener('input', () => { FORM_DIRTY = true; });
   });
 
   document.querySelectorAll('.manager-card .submit-btn').forEach(btn => {
@@ -759,10 +767,11 @@ async function init() {
   }
 }
 
-// Refresh when the tab regains focus so managers see each other's updates
+// Refresh when the tab regains focus so managers see each other's updates —
+// but never while someone has an unsaved check-in in progress.
 document.addEventListener('visibilitychange', async () => {
-  if (document.visibilityState === 'visible' && STATE) {
-    try { await loadState(); render(); } catch {}
+  if (document.visibilityState === 'visible' && STATE && !FORM_DIRTY) {
+    try { await loadState(); if (!FORM_DIRTY) render(); } catch {}
   }
 });
 
