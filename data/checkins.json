@@ -130,6 +130,40 @@
           "plan": "Start logging praise!"
         }
       ]
+    },
+    {
+      "branchId": "dallas",
+      "managerId": "chris-beattie",
+      "managerName": "Chris Beattie",
+      "weekOf": "2026-07-06",
+      "submittedAt": "2026-07-07T16:47:55.316Z",
+      "goals": [
+        {
+          "goalId": 1,
+          "status": "red",
+          "plan": "5.8 overall score, I believe for QTD"
+        },
+        {
+          "goalId": 2,
+          "status": "super_green",
+          "plan": "Well overstaffed at this point, and still will be"
+        },
+        {
+          "goalId": 3,
+          "status": "red",
+          "plan": "BM is averaging 100%, but OPS isn't at that for an average"
+        },
+        {
+          "goalId": 4,
+          "status": "super_green",
+          "plan": "No C players left - for now"
+        },
+        {
+          "goalId": 5,
+          "status": "blocked",
+          "plan": "N/A"
+        }
+      ]
     }
   ]
 }
