@@ -39,32 +39,32 @@
       "managerId": "steven-anderson",
       "managerName": "Steven Anderson",
       "weekOf": "2026-07-06",
-      "submittedAt": "2026-07-07T15:14:08.278Z",
+      "submittedAt": "2026-07-07T15:15:42.444Z",
       "goals": [
         {
           "goalId": 1,
-          "status": "blocked",
-          "plan": ""
+          "status": "green",
+          "plan": "Having coaching conversations with the team. Overall the team is doing really well we just a had a call out that impacted our attendance."
         },
         {
           "goalId": 2,
-          "status": "blocked",
-          "plan": ""
+          "status": "super_green",
+          "plan": "Need to bring on 2 potential hires. We have David Sanchez coming in on 7/7 and another 7/8."
         },
         {
           "goalId": 3,
-          "status": "blocked",
-          "plan": ""
+          "status": "super_green",
+          "plan": "On track for July, hit over 100% for May/June"
         },
         {
           "goalId": 4,
-          "status": "blocked",
-          "plan": ""
+          "status": "super_green",
+          "plan": "Only C Player is currently Nathan Hamilton."
         },
         {
           "goalId": 5,
           "status": "blocked",
-          "plan": ""
+          "plan": "na"
         }
       ]
     }
