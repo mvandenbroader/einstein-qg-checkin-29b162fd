@@ -33,6 +33,40 @@
           "plan": "na"
         }
       ]
+    },
+    {
+      "branchId": "garland",
+      "managerId": "jack-davis",
+      "managerName": "Jack Davis",
+      "weekOf": "2026-07-06",
+      "submittedAt": "2026-07-07T15:02:46.362Z",
+      "goals": [
+        {
+          "goalId": 1,
+          "status": "green",
+          "plan": "Coaching new drivers and, hopefully, terminating a low performer (braxton). \nWas trending SG, had bad week of callouts, and both of my new drivers got a cell phone ping. Brought Q2 average down to 8.0"
+        },
+        {
+          "goalId": 2,
+          "status": "super_green",
+          "plan": "Not bringing on Blake Jones (PT), still 13.6. Gonna look for a one more guy."
+        },
+        {
+          "goalId": 3,
+          "status": "super_green",
+          "plan": "On track for July, hit over 100% for May/June"
+        },
+        {
+          "goalId": 4,
+          "status": "super_green",
+          "plan": "Only Brandon C player, terminating Braxton. New Handbook will help."
+        },
+        {
+          "goalId": 5,
+          "status": "blocked",
+          "plan": "na"
+        }
+      ]
     }
   ]
 }
