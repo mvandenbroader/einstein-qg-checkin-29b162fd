@@ -1,33 +1,3 @@
 {
-  "checkins": [
-    {
-      "branchId": "tampa",
-      "managerId": "shane-heaberlin",
-      "managerName": "Shane Heaberlin",
-      "weekOf": "2026-07-06",
-      "submittedAt": "2026-07-07T14:19:47.646Z",
-      "goals": [
-        {
-          "goalId": 1,
-          "status": "super_green",
-          "plan": ""
-        },
-        {
-          "goalId": 2,
-          "status": "green",
-          "plan": "TEST ENTRY - Gerald E2E verification, will be removed."
-        },
-        {
-          "goalId": 3,
-          "status": "super_green",
-          "plan": ""
-        },
-        {
-          "goalId": 4,
-          "status": "super_green",
-          "plan": ""
-        }
-      ]
-    }
-  ]
+  "checkins": []
 }
