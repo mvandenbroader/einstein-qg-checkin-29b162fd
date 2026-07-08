@@ -222,6 +222,40 @@
           "plan": "My plan this week is to focus on delivering praise to the guys.\nMy goal this week is 10+ praises delivered by the end of the week and aiming to achieve supergreen status by July 10."
         }
       ]
+    },
+    {
+      "branchId": "fort-worth",
+      "managerId": "grant-hardison",
+      "managerName": "Grant Hardison",
+      "weekOf": "2026-07-06",
+      "submittedAt": "2026-07-08T18:32:50.076Z",
+      "goals": [
+        {
+          "goalId": 1,
+          "status": "super_green",
+          "plan": "Overall, we are at 8.4. I will keep pushing the team to get reviews, and I will keep instructing them to alert me to bad CE on moves. Driver scores have been superb. Damages have been self-contained. Our worst score is attendance is out of my control. 2 more weeks in the games. We are currently beating Tampa in the semifinals."
+        },
+        {
+          "goalId": 2,
+          "status": "green",
+          "plan": "We are at 12.8 out of the 12.3 we need. There has only been 1 period where I was uner 100%"
+        },
+        {
+          "goalId": 3,
+          "status": "red",
+          "plan": "I still need about 15k in bookings to make my quarterly goal. I am trying to get people on the books and am even working outside of my sales blocks. As of now I am on track to be red, but there is still hope."
+        },
+        {
+          "goalId": 4,
+          "status": "green",
+          "plan": "I just need to keep coaching up the new guys and helping the leads train better. We have a solid team in FW as of right now."
+        },
+        {
+          "goalId": 5,
+          "status": "blocked",
+          "plan": ""
+        }
+      ]
     }
   ]
 }
