@@ -256,6 +256,35 @@
           "plan": ""
         }
       ]
+    },
+    {
+      "branchId": "tampa",
+      "managerId": "shane-heaberlin",
+      "managerName": "Shane Heaberlin",
+      "weekOf": "2026-07-06",
+      "submittedAt": "2026-07-08T19:13:00.299Z",
+      "goals": [
+        {
+          "goalId": 1,
+          "status": "super_green",
+          "plan": "Damages for QG are at 10 Samsara is at 9 for the Quarter. Continual conversations with the team regarding these metrics, keeping them up to date with their individual scores, and ensuring these two metrics are on the forefront of everyone's minds by addressing them every morning during our morning huddles."
+        },
+        {
+          "goalId": 2,
+          "status": "red",
+          "plan": "51.8% to target. Fresh out of sales training, behind the curve due to the time frame. I feel comfortable with the process. I plan on allocating any available downtime I have to sales. To make up for lost time, I'll be operating outside of the typical \"sales block\" structure. Still very confident that I can hit super green @ 105%. (the $3,233 we spoke about yesterday evening, regarding my weekly goal, is now down to $958 )"
+        },
+        {
+          "goalId": 3,
+          "status": "super_green",
+          "plan": "100% at super green. Driving score is a serious metric for our success. Continuing to address driving concerns immediately with drivers either the day of when they return to the yard or the following morning during our morning huddle."
+        },
+        {
+          "goalId": 4,
+          "status": "green",
+          "plan": "8 praises to go before hitting super green. I'll 100% end the quarter at Super Green. I plan on continuing to give the team the praise they deserve. As I feel that has been a huge proponent of our success this season."
+        }
+      ]
     }
   ]
 }
